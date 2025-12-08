@@ -50,3 +50,20 @@ text = "The goal is to turn data into information, and information into insight.
 
 print(text.upper().split(), sep= ","  , end=" ")
 
+# Görev 3
+
+lst = ["D","A","T","A","S","C","I","E","N","C","E"]
+
+# listenin eleman sayısı
+len(lst) #11
+lst[0]  #D
+lst[10] #E
+
+lst[0:4] #DATA
+lst.pop(8)
+lst
+
+lst.append("1907")
+lst
+lst.insert(8,"N")
+lst

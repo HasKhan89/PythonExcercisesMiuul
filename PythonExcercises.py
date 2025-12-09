@@ -1,6 +1,8 @@
 # Görev 1 #
 #type() metodu ile tip belirleme
 #int
+from mypyc.ir.rtypes import dict_rprimitive
+
 x = 8
 type(x)
 
@@ -67,3 +69,61 @@ lst.append("1907")
 lst
 lst.insert(8,"N")
 lst
+
+
+# Görev 4
+
+dict = {'Christian' : ["America" , 18],
+        'Daisy' : ["England" , 12],
+        'Antonio' : ["Spain" , 22],
+        'Dante' : ["Italy" , 25]}
+
+dict.keys() # KEY Değerleri
+dict.values() # value değerleri
+
+dict['Daisy'][1] = 13 # 12 Değeri 13 olarak değiştirildi.
+
+""" 
+dict 
+
+{'Christian': ['America', 18],
+ 'Daisy': ['England', 13],
+ 'Antonio': ['Spain', 22],
+ 'Dante': ['Italy', 25]}"""
+
+dict.update({'Ahmet' : ['Türkiye', 24]}) # Key Value Değeri Girmek
+
+dict
+
+dict.pop('Antonio')
+
+
+
+#Görev 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

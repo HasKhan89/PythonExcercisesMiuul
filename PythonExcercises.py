@@ -69,7 +69,7 @@ lst.append("1907")
 
 lst.insert(8,"N")
 
-
+lst
 
 # Görev 4
 
@@ -100,27 +100,58 @@ my_dictionary.pop('Antonio')
 
 
 #Görev 5
-"""
+
 l=[2,13,18,93,22]
-def fun(..):
-    for i in l:
-        if i%2 != 0:
-            print(i)
+
+def func(list):
+    cift_list = []
+    tek_list = []
+    for i in list:
+        if i% 2 == 0:
+            cift_list.append(i)
         else:
-            print(i)
-    return .. 
+            tek_list.append(i)
+    return cift_list, tek_list
 
-even_list, odd_list = func(l)
-
-
-"""
+cift, tek = func(l)
+cift, tek
 
 
+# Görev 6
+ogrenciler = ["Ali", "Veli", "Ayşe", "Talat", "Zeynep", "Ece"]
+
+for i,x in enumerate(ogrenciler):
+    if i<3:
+        i += 1
+        print("Mühendislik Fakültesi" ,i, ". öğrenci: ", x)
+    else:
+        i -= 2
+        print("Tıp Fakültesi",i," . öğrenci: ", x)
 
 
 
+# Görev 7
+ders_kodu = ["CMP1005", "PSY1001", "HUK1005", "SEN2204"]
+kredi=[3,4,2,4]
+kontenjan = [30,75,150,25]
 
 
+for ders_kodu,kredi,kontenjan in zip(ders_kodu,kredi,kontenjan):
+    print(f"Kredisi {kredi} olan {ders_kodu} kodlu dersin kontenjanı {kontenjan} kişidir.")
+
+# Görev 8
+
+kume1 = set(["data", "python"])
+kume2 = set(["data", "function", "qcut", "lamda", "python", "miuul"])
+
+def kume(set1, set2):
+    if set1.issuperset(set2):
+        print(set1.intersection(set2))
+    else:
+        print(set2.difference(set1))
+
+kume(kume1,kume2)
+kume(kume2,kume1)
 
 
 

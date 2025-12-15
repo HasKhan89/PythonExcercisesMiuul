@@ -1,8 +1,6 @@
 # Görev 1 #
 #type() metodu ile tip belirleme
 #int
-from mypyc.ir.rtypes import dict_rprimitive
-
 x = 8
 type(x)
 
@@ -58,30 +56,32 @@ lst = ["D","A","T","A","S","C","I","E","N","C","E"]
 
 # listenin eleman sayısı
 len(lst) #11
-lst[0]  #D
-lst[10] #E
+lst[0]
+lst[10]
 
-lst[0:4] #DATA
+data_list  = lst[0:4]
+data_list
+#DATA
 lst.pop(8)
-lst
+
 
 lst.append("1907")
-lst
+
 lst.insert(8,"N")
-lst
+
 
 
 # Görev 4
 
-dict = {'Christian' : ["America" , 18],
+my_dictionary = {'Christian' : ["America" , 18],
         'Daisy' : ["England" , 12],
         'Antonio' : ["Spain" , 22],
         'Dante' : ["Italy" , 25]}
 
-dict.keys() # KEY Değerleri
-dict.values() # value değerleri
+my_dictionary.keys() # KEY Değerleri
+my_dictionary.values() # value değerleri
 
-dict['Daisy'][1] = 13 # 12 Değeri 13 olarak değiştirildi.
+my_dictionary['Daisy'][1] = 13 # 12 Değeri 13 olarak değiştirildi.
 
 """ 
 dict 
@@ -91,18 +91,29 @@ dict
  'Antonio': ['Spain', 22],
  'Dante': ['Italy', 25]}"""
 
-dict.update({'Ahmet' : ['Türkiye', 24]}) # Key Value Değeri Girmek
+my_dictionary.update({'Ahmet' : ['Türkiye', 24]}) # Key Value Değeri Girmek
 
-dict
 
-dict.pop('Antonio')
+
+my_dictionary.pop('Antonio')
 
 
 
 #Görev 5
+"""
+l=[2,13,18,93,22]
+def fun(..):
+    for i in l:
+        if i%2 != 0:
+            print(i)
+        else:
+            print(i)
+    return .. 
+
+even_list, odd_list = func(l)
 
 
-
+"""
 
 
 

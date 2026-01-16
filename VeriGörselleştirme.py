@@ -2,6 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from statsmodels.tsa.arima.datasets.brockwell_davis_2002 import sbl
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 500)
@@ -83,4 +84,30 @@ y = np.array([240,250,260,270,280,290,300,310,320,330])
 plt.subplot(1,3,3)
 plt.title("3")
 plt.plot(x,y)
+plt.show()
+
+import pandas as pd
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', 500)
+import seaborn as sns
+from matplotlib import pyplot as plt
+
+df = sns.load_dataset("tips")
+df.head()
+
+df["sex"].value_counts()
+sns.countplot(x= df["sex"], data=df)
+plt.show()
+
+df['sex'].value_counts().plot(kind="bar")
+plt.show()
+
+sns.boxplot(x=df["total_bill"])
+plt.show()
+
+df["total_bill"].hist()
+plt.show()
+
+plt.hist(df["total_bill"])
 plt.show()
